@@ -14,7 +14,7 @@ select = fqlite3.select_one('users', 'email', 'main.db', id='Hello', name='World
 #cursor.fetchone()
 
 #Select Many Record
-select = fqlite3.select_one('users', 'email', 'main.db', id='Hello', name='World') # -> tuple
+select = fqlite3.select_many('users', 'email', 'main.db', id='Hello', name='World') # -> tuple
 #
 #cursor.execute('SELECT email FROM users WHERE id == ? AND name == ?;', ('Hello', 'World'))
 #cursor.fetchall()
