@@ -25,6 +25,6 @@ fqlite3.insert('users', 'main.db', id='Hello', name='World') # -> bool
 #cursor.execute('INSERT INTO users VALUES(?, ?);', ('Hello', 'World'))
 
 #Update
-fqlite3.insert('users', 'main.db', {id='Hello', name='World'}, email='helloworld@gmail.com') # -> bool
+fqlite3.update('users', 'main.db', {id='Hello', name='World'}, email='helloworld@gmail.com') # -> bool
 
 #cursor.execute('UPDATE users SET email = ? WHERE id == ? AND name == ?;', ('helloworld@gmail.com', 'Hello', 'World'))
